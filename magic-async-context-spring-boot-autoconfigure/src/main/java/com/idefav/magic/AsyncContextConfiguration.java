@@ -1,6 +1,5 @@
 package com.idefav.magic;
 
-import com.idefav.context.Context;
 import com.idefav.magic.filter.AsyncContextFilter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -16,7 +15,7 @@ import javax.servlet.DispatcherType;
 public class AsyncContextConfiguration {
 
     @Bean
-    @ConditionalOnClass(Context.class)
+    @ConditionalOnClass(name = "com.idefav.context.Context")
     public FilterRegistrationBean<AsyncContextFilter> registrationAsyncContextBean() {
         FilterRegistrationBean<AsyncContextFilter> filterFilterRegistrationBean = new FilterRegistrationBean<>();
         filterFilterRegistrationBean.setFilter(new AsyncContextFilter());
