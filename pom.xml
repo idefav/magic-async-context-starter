@@ -32,12 +32,12 @@
     </developers>
 
     <properties>
-        <revision>1.0.0</revision>
+        <revision>1.0.1</revision>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-boot.version>2.7.2</spring-boot.version>
-        <magic-async-context.version>0.0.1-SNAPSHOT</magic-async-context.version>
+        <magic-async-context.version>1.0.1</magic-async-context.version>
     </properties>
 
     <dependencyManagement>
